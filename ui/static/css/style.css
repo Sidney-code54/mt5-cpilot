@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #eee;
+  padding: 20px;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1.title {
+  text-align: center;
+  color: #ffffff;
+}
+
+.mode-section {
+  background: #1e1e1e;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.ask-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.ask-button,
+.trade-button {
+  padding: 10px 20px;
+  background: #2979ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.strategy-box,
+.trade-box {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.trade-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.buy {
+  color: #4caf50;
+}

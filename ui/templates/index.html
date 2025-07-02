@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MT5 Copilot – Ask Mode</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 MT5 Copilot – Ask Mode</h1>
+
+        <form method="POST">
+            <label>Account Balance ($):</label>
+            <input type="number" step="0.01" name="balance" required>
+
+            <label>Risk % per Trade:</label>
+            <input type="number" step="0.01" name="risk" required>
+
+            <button type="submit">Generate Trade Plan</button>
+        </form>
+
+        {% if trade_plan %}
+            <h2>📊 Trade Plan:</h2>
+            <pre>{{ trade_plan }}</pre>
+        {% endif %}
+    </div>
+</body>
+</html>
