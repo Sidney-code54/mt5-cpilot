@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask Mode – MT5 Copilot</title>
+</head>
+<body>
+    <h2>Ask Mode Strategy Generator</h2>
+    <form method="POST">
+        <label>Symbol:</label>
+        <input type="text" name="symbol" value="EURUSD"><br>
+
+        <label>Balance:</label>
+        <input type="number" name="balance" step="0.01" value="1000"><br>
+
+        <label>Risk %:</label>
+        <input type="number" name="risk" step="0.1" value="1"><br>
+
+        <button type="submit">Generate Strategy</button>
+    </form>
+
+    {% if plan %}
+    <h3>📊 Generated Trade Plan:</h3>
+    <pre>{{ plan }}</pre>
+    {% endif %}
+</body>
+</html>
